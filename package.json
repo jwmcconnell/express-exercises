@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:watch": "nodemon index.js",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
     "test": "jest --verbose --runInBand",
     "test:watch": "npm run test -- --watch"
   },
