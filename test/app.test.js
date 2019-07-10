@@ -4,6 +4,9 @@ const app = require('../lib/app');
 describe('list of dogs page', () => {
   it('returns an html page', () => {
     return request(app)
-      .get('/');
+      .get('/')
+      .then(res => {
+        expect(res.text).toEqual(expect.stringContaining('<h1>Dogs</h1>'));
+      });
   });
 });
